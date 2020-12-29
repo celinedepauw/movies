@@ -1,0 +1,13 @@
+{
+    "name": "etudiant/exercices-perso",
+    "authors": [
+        {
+            "name": "Celine Depauw",
+            "email": "celinefauchier@hotmail.com"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^5.2",
+        "altorouter/altorouter": "^2.0"
+    }
+}
