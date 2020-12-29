@@ -39,3 +39,12 @@ h3{
     height: 100%;
     padding: 1rem;
 }
+
+a{
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
