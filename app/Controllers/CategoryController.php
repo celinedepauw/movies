@@ -14,10 +14,15 @@ class CategoryController{
         // récupération de toutes les catégories pour la page home
         $categories = $categoryModel->findAllForHome();
 
+        // récupération de tous les films pour une catégorie donnée
+        $movieModel = new Movie();
+        $movies = $movieModel->findAllInCategory($idCategory);
+
         $viewVars = [
             'idCategory' => $variables['idCategory'],
             'category' => $category,
             'categories' => $categories,
+            'movies' => $movies,
         ];
 
         $this->show('category', $viewVars);

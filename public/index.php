@@ -6,6 +6,7 @@ require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/../app/Controllers/MainController.php';
 require __DIR__ . '/../app/Controllers/CategoryController.php';
 require __DIR__ . '/../app/Models/Category.php';
+require __DIR__ . '/../app/Models/Movie.php';
 
 // récup url en get
 $url = filter_input(INPUT_GET, '_url');

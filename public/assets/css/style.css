@@ -48,3 +48,34 @@ a:hover{
     text-decoration: none;
     color: black;
 }
+
+.movie{
+    color: purple;
+}
+
+.duration{
+    color: gray;
+}
+#movies-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#movies-list .movie{
+    border: solid black 2px;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem;
+    width:20%;
+}
+
+.year{
+    font-style: italic;
+}
+
+section h2{
+    text-align: center;
+    font-weight: bold;
+    padding: 3rem;
+}
