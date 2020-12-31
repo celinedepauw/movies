@@ -23,7 +23,7 @@
           );
               ?>
               <a href="<?=$url;?>">
-                <h2 class="display-3 font-weight-bold mb-4"><?= $categories[0]['category_name']; ?></h2>
+                <h2 class="display-3 font-weight-bold mb-4 p-1"><?= $categories[0]['category_name']; ?></h2>
               </a>
             </div>
           </div>
@@ -42,7 +42,7 @@
           );
               ?>
               <a href="<?=$url;?>">
-                <h2 class="display-3 font-weight-bold mb-4"><?= $categories[1]['category_name']; ?></h2>
+                <h2 class="display-3 font-weight-bold mb-4 p-1"><?= $categories[1]['category_name']; ?></h2>
               </a>
             </div>
           </div>
@@ -63,8 +63,8 @@
           ]
           );
               ?>
-              <a href=""<?=$url;?>>
-                <h2 class="display-3 font-weight-bold mb-4"><?= $categories[2]['category_name']; ?></h2>
+              <a href="<?=$url;?>">
+                <h2 class="display-3 font-weight-bold mb-4 p-1"><?= $categories[2]['category_name']; ?></h2>
               </a>
             </div>
           </div>
@@ -84,7 +84,7 @@
           );
               ?>
               <a href="<?=$url;?>">
-                <h2 class="display-3 font-weight-bold mb-4"><?= $categories[3]['category_name']; ?></h2>
+                <h2 class="display-3 font-weight-bold mb-4 p-1"><?= $categories[3]['category_name']; ?></h2>
               </a>
             </div>
           </div>
@@ -105,14 +105,14 @@
           );
               ?>
               <a href="<?=$url;?>">
-                <h2 class="display-3 font-weight-bold mb-4"><?= $categories[4]['category_name']; ?></h2>
+                <h2 class="display-3 font-weight-bold mb-4 p-1"><?= $categories[4]['category_name']; ?></h2>
               </a>
             </div>
           </div>
         </div>
       </div>
       <div class="col-md-6">
-        <div class="card border-0 text-center text-light"><img src="<?= $categories[5]['category_picture']; ?>" alt="Card image" class="card-img">
+        <div class="card border-0 text-center text-black"><img src="<?= $categories[5]['category_picture']; ?>" alt="Card image" class="card-img">
           <div class="card-img-overlay d-flex align-items-center">
             <div class="w-100">
             <?php
@@ -124,7 +124,7 @@
           );
               ?>
               <a href="<?=$url;?>">
-                <h2 class="display-3 font-weight-bold mb-4"><?= $categories[5]['category_name']; ?></h2>
+                <h2 class="display-3 font-weight-bold mb-4 p-1"><?= $categories[5]['category_name']; ?></h2>
               </a>
             </div>
           </div>
@@ -145,7 +145,7 @@
           );
               ?>
               <a href="<?=$url;?>">
-                <h2 class="display-3 font-weight-bold mb-4"><?= $categories[6]['category_name']; ?></h2>
+                <h2 class="display-3 font-weight-bold mb-4 p-1"><?= $categories[6]['category_name']; ?></h2>
               </a>
             </div>
           </div>
@@ -164,7 +164,7 @@
           );
               ?>
               <a href="<?=$url;?>">
-                <h2 class="display-3 font-weight-bold mb-4"><?= $categories[7]['category_name']; ?></h2>
+                <h2 class="display-3 font-weight-bold mb-4 p-1"><?= $categories[7]['category_name']; ?></h2>
               </a>
             </div>
           </div>

@@ -21,28 +21,95 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="<?=$baseUri?>">Accueil <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Action</a>
+                        <?php
+              $url = $router->generate(
+                'category',
+          [
+            'idCategory' => $categories[0]['id']
+          ]
+          );
+              ?>
+                            <a class="nav-link" href="<?=$url?>"><?= $categories[0]['category_name']; ?></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Comédie</a>
+                        <?php
+              $url = $router->generate(
+                'category',
+          [
+            'idCategory' => $categories[1]['id']
+          ]
+          );
+              ?>
+                            <a class="nav-link" href="<?=$url?>"><?= $categories[1]['category_name']; ?></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Drame</a>
+                        <?php
+              $url = $router->generate(
+                'category',
+          [
+            'idCategory' => $categories[2]['id']
+          ]
+          );
+              ?>
+                            <a class="nav-link" href="<?=$url?>"><?= $categories[2]['category_name']; ?></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Historique</a>
+                        <?php
+              $url = $router->generate(
+                'category',
+          [
+            'idCategory' => $categories[3]['id']
+          ]
+          );
+              ?>
+                            <a class="nav-link" href="<?=$url?>"><?= $categories[3]['category_name']; ?></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Horreur</a>
+                        <?php
+              $url = $router->generate(
+                'category',
+          [
+            'idCategory' => $categories[4]['id']
+          ]
+          );
+              ?>
+                            <a class="nav-link" href="<?=$url?>"><?= $categories[4]['category_name']; ?></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Policier / Thriller</a>
+                        <?php
+              $url = $router->generate(
+                'category',
+          [
+            'idCategory' => $categories[5]['id']
+          ]
+          );
+              ?>
+                            <a class="nav-link" href="<?=$url?>"><?= $categories[5]['category_name']; ?></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Science-Fiction</a>
+                        <?php
+              $url = $router->generate(
+                'category',
+          [
+            'idCategory' => $categories[6]['id']
+          ]
+          );
+              ?>
+                            <a class="nav-link" href="<?=$url?>"><?= $categories[6]['category_name']; ?></a>
+                        </li>
+                        <li class="nav-item">
+                        <?php
+              $url = $router->generate(
+                'category',
+          [
+            'idCategory' => $categories[7]['id']
+          ]
+          );
+              ?>
+                            <a class="nav-link" href="<?=$url?>"><?= $categories[7]['category_name']; ?></a>
                         </li>
                     </ul>
                 </div>
