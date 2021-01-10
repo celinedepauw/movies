@@ -7,7 +7,7 @@ class Movie
     private $year;
     private $duration;
     private $category;
-    private $nationality;
+    private $type;
 
 
     // récupération de tous les films pour une catégorie donnée
@@ -26,6 +26,7 @@ class Movie
             FROM `movie`
             WHERE
                 `category` = {$idCategory}
+            ORDER BY `name` ASC
         ";
 
         $statement = $pdo->query($sql);
@@ -136,9 +137,9 @@ class Movie
     /**
      * Get the value of nationality
      */ 
-    public function getNationality()
+    public function getType()
     {
-        return $this->nationality;
+        return $this->type;
     }
 
     /**
@@ -146,9 +147,9 @@ class Movie
      *
      * @return  self
      */ 
-    public function setNationality($nationality)
+    public function setType($type)
     {
-        $this->nationality = $nationality;
+        $this->type = $type;
 
         return $this;
     }

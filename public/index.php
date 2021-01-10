@@ -19,6 +19,7 @@ $router = new AltoRouter();
 
 $baseUri = $_SERVER['BASE_URI'];
 
+
 $router->setBasePath($baseUri);
 
 // CRÉATION ROUTE PAGE HOME
