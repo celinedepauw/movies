@@ -18,7 +18,13 @@
             ?>
         </ul>
 
+        <div id="toTop">
+      <a href="#top"><img src="<?= $baseUri . '/assets/images/top.webp" alt="back to top'?>"></a>
+    </div>
+
 </section>
+
+
 
 
               

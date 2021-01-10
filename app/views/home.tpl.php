@@ -217,8 +217,9 @@
     </div>             
     </div>
 
-    <div id="toTop">
+    <<div id="toTop">
       <a href="#top"><img src="assets/images/top.webp" alt="back to top"></a>
     </div>
+
   </div>
 </section>
