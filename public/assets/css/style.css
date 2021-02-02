@@ -31,6 +31,16 @@ h3{
   
   }*/
 
+  .container-fluid {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .movie-category {
+      width: 50%;
+      padding: 1rem;
+  }
+
   .card {
     height: 100%;
   }
@@ -54,13 +64,16 @@ a{
 a:hover{
     text-decoration: none;
     color: #604B2E;
-  
 }
 
 a h2{
     background-color: black;
     border-radius: 10px;
     display: inline;
+}
+
+h2:hover {
+    transform: scale(2);
 }
 
 
