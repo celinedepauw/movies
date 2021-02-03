@@ -111,6 +111,28 @@
               ?>
                             <a class="nav-link" href="<?=$url?>"><?= $categories[7]['category_name']; ?></a>
                         </li>
+                        <li class="nav-item">
+                        <?php
+              $url = $router->generate(
+                'category',
+          [
+            'idCategory' => $categories[8]['id']
+          ]
+          );
+              ?>
+                            <a class="nav-link" href="<?=$url?>"><?= $categories[8]['category_name']; ?></a>
+                        </li>
+                        <li class="nav-item">
+                        <?php
+              $url = $router->generate(
+                'category',
+          [
+            'idCategory' => $categories[9]['id']
+          ]
+          );
+              ?>
+                            <a class="nav-link" href="<?=$url?>"><?= $categories[9]['category_name']; ?></a>
+                        </li>
                     </ul>
                 </div>
             </nav>

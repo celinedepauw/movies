@@ -1,10 +1,4 @@
-<?php
-//dump($movies);
-?>
-
-
 <section>
-
     <h2 class="display-3"><?=$category->getCategoryName();?></h2>
         <ul id="movies-list">
             <?php
@@ -17,11 +11,6 @@
                 }
             ?>
         </ul>
-
-        <div id="toTop">
-      <a href="#top"><img src="<?= $baseUri . '/assets/images/top.webp" alt="back to top'?>"></a>
-    </div>
-
 </section>
 
 

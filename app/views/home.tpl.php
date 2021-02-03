@@ -1,14 +1,3 @@
-<?php
-//dump($categories);
-//echo $categories[0]['category_name'];
-
-//foreach($categories as $index => $category){
-//echo $categories[$index]['category_name'];
-//echo '<br>';
-//}
-?>
-
-
 <section>
   <div class="container-fluid">
 
@@ -37,10 +26,6 @@
       </div>
         <?php endforeach;?>   
     </div>             
-    </div>
-
-    <<div id="toTop">
-      <a href="#top"><img src="assets/images/top.webp" alt="back to top"></a>
     </div>
 
   </div>

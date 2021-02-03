@@ -1,4 +1,7 @@
 <?php
+namespace Movies\Controllers;
+use Movies\Models\Category;
+use Movies\Models\Movie;
 
 class CategoryController{
     // méthode pour afficher la page category

@@ -1,5 +1,9 @@
 <?php
 
+namespace Movies\Models;
+use Movies\Utils\Database;
+use PDO;
+
 class Category
 {
     private $id;
@@ -9,19 +13,14 @@ class Category
 
     public function find($id)
     {
+        $pdo = Database::getPDO();
+
         $sql = "
         SELECT
             *
         FROM `category`
         WHERE id={$id}
     ;";
-
-        $pdo = new PDO(
-            'mysql:dbname=movies;host=localhost;charset=UTF8',
-            'movies',
-            'movies',
-            [PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING],
-        );
 
         $statement = $pdo->query($sql);
 
@@ -32,14 +31,9 @@ class Category
 
     public function findAllForHome()
     {
+        $pdo = Database::getPDO();
+        
         $sql = "SELECT * FROM category ORDER BY category_name ASC;";
-
-        $pdo = new PDO(
-            'mysql:dbname=movies;host=localhost;charset=UTF8',
-            'movies',
-            'movies',
-            [PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING],
-        );
 
         $statement = $pdo->query($sql);
 

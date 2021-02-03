@@ -1,5 +1,8 @@
 <?php
 
+namespace Movies\Controllers;
+use Movies\Models\Category;
+
 class MainController{
     // méthode pour afficher la home page
     public function home()
@@ -18,7 +21,7 @@ class MainController{
 
 
     // méthode qui affiche la page demandée
-    private function show($viewName, $viewVars = [])
+    protected function show($viewName, $viewVars = [])
     {
         global $router;
 
