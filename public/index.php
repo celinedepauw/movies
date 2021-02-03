@@ -55,6 +55,27 @@ $router->map(
     'category',
 );
 
+ // AJOUT D'UN FILM 
+ $router->map(
+    'GET',
+    '/movie/add',
+    [
+        'methodName' => 'movie',
+        'controllerName' => '\Movies\Controllers\MovieController'
+    ],
+    'movie-add'
+);
+
+$router->map(
+    'POST',
+    '/movie/add',
+    [
+        'methodName' => 'addMovie',
+        'controllerName' => '\Movies\Controllers\MovieController'
+    ],
+    'movie-addPost'
+);
+
 $match = $router->match();
 //dd($match);
 //TODO dispatcher ne fonctionne pas : TROUVER LE BUG
