@@ -5,10 +5,8 @@ use Movies\Models\Movie;
 
 class CategoryController extends MainController{
     // méthode pour afficher la page category
-    public function category($variables)
+    public function category($idCategory)
     {
-        $idCategory = $variables['idCategory'];
-
         $categoryModel = new Category();
 
         // récupération de la catégorie grace à son id
@@ -22,7 +20,7 @@ class CategoryController extends MainController{
         $movies = $movieModel->findAllInCategory($idCategory);
 
         $viewVars = [
-            'idCategory' => $variables['idCategory'],
+            'idCategory' => $idCategory,
             'category' => $category,
             'categories' => $categories,
             'movies' => $movies,

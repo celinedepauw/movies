@@ -5,7 +5,7 @@ use Movies\Models\Movie;
 use Movies\Models\Category;
 
 class MovieController extends MainController{
-    public function movie($variables)
+    public function movie()
     {
         $movieModel = new Movie();
         $movies = $movieModel->find();
