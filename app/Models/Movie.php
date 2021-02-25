@@ -13,20 +13,6 @@ class Movie
     private $category;
     private $type;
 
-    // récupération de tous les films
-    public function find()
-    {
-        $pdo = Database::getPDO();
-
-        $sql = "SELECT * FROM movie ORDER BY name ASC;";
-
-        $statement = $pdo->query($sql);
-
-        $movies = $statement->fetchAll(PDO::FETCH_ASSOC);
-     
-        return $movies;
-    }
-
     // récupération de tous les films pour une catégorie donnée
     public function findAllInCategory($idCategory)
     {

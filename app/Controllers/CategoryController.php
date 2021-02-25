@@ -11,7 +11,7 @@ class CategoryController extends MainController{
 
         // récupération de la catégorie grace à son id
         $category = $categoryModel->find($idCategory);
-
+      
         // récupération de toutes les catégories pour la page home
         $categories = $categoryModel->findAllForHome();
 

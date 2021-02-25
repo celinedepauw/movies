@@ -14,6 +14,7 @@ class ErrorController extends MainController {
         header('HTTP/1.0 404 Not Found');
 
         // Puis on gère l'affichage
-        $this->show('error/err404');
+        $this->show('err404');
+
     }
 }

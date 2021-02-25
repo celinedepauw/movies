@@ -18,11 +18,11 @@
       Oui, mais lequel ???? On en a tellement....</p>
 
     <div class="navbar text-center">
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand navbar-light">
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="d-flex flex-wrap justify-content-center navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="<?= $router->generate('home'); ?>">Accueil <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="<?= $router->generate('home'); ?>">Accueil</a>
             </li>
             <?php foreach ($categories as $i => $cat) : ?>
               <li class="nav-item">
