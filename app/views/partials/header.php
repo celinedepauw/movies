@@ -16,11 +16,11 @@
     <h1>Qu'est-ce-qu'on regarde ce soir ? </h1>
     <p class="lead font-italic">Et si ce soir, au lieu de regarder Netflix ou Canal +, on regardait un DVD comme au bon vieux temps? <br>
       Oui, mais lequel ???? On en a tellement....</p>
-    <!--<div class="navbar text-center">
+    <div class="navbar text-center">
       <nav class="navbar navbar-expand navbar-light">
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="d-flex flex-wrap justify-content-center navbar-nav">
-          <?php if(!$categories) { ?>
+          <?php if(empty($categories)) { ?>
               <li class="nav-item">
               <a class="nav-link" href="<?= $router->generate('home'); ?>">Retour Accueil</a>
               </li>
@@ -41,7 +41,7 @@
                 <a class="nav-link" href="<?= $url ?>"><?= $categories[$i]['category_name']; ?></a>
               </li>
             <?php endforeach; ?>
-            <?php } ?>-->
+            <?php } ?>
 
             <!--<li class="nav-item">
               <a class="nav-link" href="<?= $router->generate('home'); ?>">Accueil</a>
