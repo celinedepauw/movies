@@ -4,18 +4,18 @@ use Movies\Models\Category;
 use Movies\Models\Movie;
 
 class CategoryController extends MainController{
-    // méthode pour afficher la page category
+    // method that displays the page category
     public function category($idCategory)
     {
         $categoryModel = new Category();
 
-        // récupération de la catégorie grace à son id
+        // I get the category thanks to its id
         $category = $categoryModel->find($idCategory);
       
-        // récupération de toutes les catégories pour la page home
+        // I get all the categories fot home page
         $categories = $categoryModel->findAllForHome();
 
-        // récupération de tous les films pour une catégorie donnée
+        // I get all the movies for a specific category
         $movieModel = new Movie();
         $movies = $movieModel->findAllInCategory($idCategory);
 

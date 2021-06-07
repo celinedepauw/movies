@@ -1,6 +1,6 @@
 body {
     font-family: 'JetBrains Mono', monospace;
-    background: url("../images/fond-film.jpg") fixed no-repeat;
+    /*background: url("../images/fond-film.jpg") fixed no-repeat;*/
 }
 
 /*=======================================================*/
@@ -30,7 +30,7 @@ h3 {
 
 
 /*=======================================================*/
-/* Pages Home et Category */
+/* Pages Home and Category */
 /*=======================================================*/
 
 .container-fluid {
@@ -112,7 +112,7 @@ section h2 {
 }
 
 /*=======================================================*/
-/* Page Films */
+/* Page Movies */
 /*=======================================================*/
 .moviesList {
     font-size: 1.5rem;

@@ -4,12 +4,12 @@ namespace Movies\Controllers;
 use Movies\Models\Category;
 
 class MainController{
-    // méthode pour afficher la home page
+    // method to display home page
     public function home()
     {
         $categoryModel = new Category();
 
-        // récupération de toutes les catégories pour la page home
+        // I get all the categories for home page
         $categories = $categoryModel->findAllForHome();
 
         $viewVars = [
@@ -20,14 +20,14 @@ class MainController{
     }
 
 
-    // méthode qui affiche la page demandée
+    // method that displays the good page
     protected function show($viewName, $viewVars = [])
     {
         global $router;
 
         extract($viewVars);
 
-        // on enregistre dans le tableau $viewVars l'url racine du site
+        // I register in $viewVars' array the root's url
         $baseUri = $_SERVER['BASE_URI'];
 
         require __DIR__ . '/../views/partials/header.php';

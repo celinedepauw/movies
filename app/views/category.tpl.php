@@ -1,5 +1,14 @@
 <section>
-    <h2 class="category-title"><?= $category->getCategoryName(); ?></h2>
+    <h2 class="category-title">
+    <?php
+    if ($category === false) {
+        echo 'Cette catégorie n\'existe pas';
+    }
+    else {
+        echo $category->getCategoryName();
+    }          
+    ?>
+     </h2>
     <div class="container-fluid" id="movies-list">
         <?php
         foreach ($movies as $movie) {

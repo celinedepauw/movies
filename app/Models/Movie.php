@@ -13,7 +13,7 @@ class Movie
     private $category;
     private $type;
 
-    // récupération de tous les films pour une catégorie donnée
+    // I get all the movies for a specific category
     public function findAllInCategory($idCategory)
     {
         $pdo = Database::getPDO();

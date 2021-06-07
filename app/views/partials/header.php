@@ -17,6 +17,8 @@
     <p class="lead font-italic">Et si ce soir, au lieu de regarder Netflix ou Canal +, on se regardait un DVD comme au bon vieux temps? <br>
       Oui, mais lequel ???? On en a tellement....</p>
 
+      <?php // var_dump($categories) ?>
+
     <div class="navbar text-center">
       <nav class="navbar navbar-expand navbar-light">
         <div class="collapse navbar-collapse" id="navbarNav">

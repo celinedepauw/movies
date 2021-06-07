@@ -2,18 +2,18 @@
 
 namespace Movies\Controllers;
 
-// Classe gérant les erreurs (404, 403)
+// Class that manages errors
 class ErrorController extends MainController {
     /**
-     * Méthode gérant l'affichage de la page 404
+     * page 404
      *
      * @return void
      */
     public function err404() {
-        // On envoie le header 404
+        // I send the header 404
         header('HTTP/1.0 404 Not Found');
 
-        // Puis on gère l'affichage
+        // I display the page
         $this->show('err404');
 
     }

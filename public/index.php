@@ -1,6 +1,6 @@
 <?php
 
-// chargement de toutes les bibliothèques gérées par composer
+// loading libraries managed by composer
 require __DIR__ . '/../vendor/autoload.php';
 
 $router = new AltoRouter();
@@ -11,7 +11,7 @@ if (array_key_exists('BASE_URI', $_SERVER)) {
     $_SERVER['BASE_URI'] = '';
 }
 
-// CRÉATION ROUTE PAGE HOME
+// Home page
 $router->map(
     'GET',
     '/',
@@ -22,7 +22,7 @@ $router->map(
     'home',
 );
 
-// CRÉATION ROUTE PAGE CATEGORY
+// page category
 $router->map(
     'GET',
     '/category/[i:idCategory]',
