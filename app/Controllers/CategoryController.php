@@ -12,7 +12,7 @@ class CategoryController extends MainController{
         // I get the category thanks to its id
         $category = $categoryModel->find($idCategory);
       
-        // I get all the categories fot home page
+        // I get all the categories for home page
         $categories = $categoryModel->findAllForHome();
 
         // I get all the movies for a specific category

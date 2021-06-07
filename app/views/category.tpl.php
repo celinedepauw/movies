@@ -1,4 +1,5 @@
 <section>
+    <a class="return-homepage" href="<?= $router->generate('home'); ?>">Retour Accueil</a>
     <h2 class="category-title">
     <?php
     if ($category === false) {

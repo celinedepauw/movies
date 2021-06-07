@@ -16,14 +16,34 @@
     <h1>Qu'est-ce-qu'on regarde ce soir ? </h1>
     <p class="lead font-italic">Et si ce soir, au lieu de regarder Netflix ou Canal +, on regardait un DVD comme au bon vieux temps? <br>
       Oui, mais lequel ???? On en a tellement....</p>
-
-      <?php // var_dump($categories) ?>
-
-    <div class="navbar text-center">
+    <!--<div class="navbar text-center">
       <nav class="navbar navbar-expand navbar-light">
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="d-flex flex-wrap justify-content-center navbar-nav">
-            <li class="nav-item">
+          <?php if(!$categories) { ?>
+              <li class="nav-item">
+              <a class="nav-link" href="<?= $router->generate('home'); ?>">Retour Accueil</a>
+              </li>
+          <?php } else { ?>
+              <li class="nav-item">
+              <a class="nav-link" href="<?= $router->generate('home'); ?>">Accueil</a>
+              </li>
+            <?php foreach ($categories as $i => $cat) : ?>
+              <li class="nav-item">
+                <?php
+                $url = $router->generate(
+              'category',
+              [
+                    'idCategory' => $categories[$i]['id']
+                  ]
+          );
+                ?>
+                <a class="nav-link" href="<?= $url ?>"><?= $categories[$i]['category_name']; ?></a>
+              </li>
+            <?php endforeach; ?>
+            <?php } ?>-->
+
+            <!--<li class="nav-item">
               <a class="nav-link" href="<?= $router->generate('home'); ?>">Accueil</a>
             </li>
             <?php foreach ($categories as $i => $cat) : ?>
@@ -38,7 +58,7 @@
                 ?>
                 <a class="nav-link" href="<?= $url ?>"><?= $categories[$i]['category_name']; ?></a>
               </li>
-            <?php endforeach; ?>
+            <?php endforeach; ?>-->
           </ul>
         </div>
       </nav>

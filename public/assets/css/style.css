@@ -112,6 +112,20 @@ section h2 {
     color: #604B2E;
 }
 
+.return-homepage {
+    background-color: black;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.return-homepage:hover {
+    text-decoration: none;
+    color: #856D45;
+    font-weight: bold;
+}
+
 /*=======================================================*/
 /* Page Movies */
 /*=======================================================*/
@@ -122,6 +136,43 @@ section h2 {
     display: flex;
     flex-wrap: nowrap;
 }
+
+/*=======================================================*/
+/* Page Error */
+/*=======================================================*/
+
+.page-error {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.page-not-found {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #856D45;
+}
+
+.error-return-homepage {
+    background-color: black;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.error-return-homepage:hover {
+    text-decoration: none;
+    color: #856D45;
+    font-weight: bold;
+}
+
+.no-signal-picture {
+    display: block;
+    margin: 2rem auto;
+}
+
 
 /*=======================================================*/
 /* Footer */
