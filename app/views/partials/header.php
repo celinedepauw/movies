@@ -14,7 +14,7 @@
 <body>
   <header>
     <h1>Qu'est-ce-qu'on regarde ce soir ? </h1>
-    <p class="lead font-italic">Et si ce soir, au lieu de regarder Netflix ou Canal +, on se regardait un DVD comme au bon vieux temps? <br>
+    <p class="lead font-italic">Et si ce soir, au lieu de regarder Netflix ou Canal +, on regardait un DVD comme au bon vieux temps? <br>
       Oui, mais lequel ???? On en a tellement....</p>
 
       <?php // var_dump($categories) ?>
